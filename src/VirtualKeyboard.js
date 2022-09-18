@@ -8,8 +8,8 @@ import {
 	View,
 	TouchableOpacity,
 	Image,
-	ViewPropTypes
 } from 'react-native';
+import {ViewPropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
 
 import styles from './VirtualKeyboard.style';
 
@@ -28,7 +28,7 @@ export default class VirtualKeyboard extends Component {
 		decimal: PropTypes.bool,
 		rowStyle: ViewPropTypes.style,
 		cellStyle: ViewPropTypes.style,
-		textStyle: Text.propTypes.style,
+		textStyle: TextPropTypes.style,
 		clearOnLongPress: PropTypes.bool,
 	}
 
